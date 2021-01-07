@@ -74,7 +74,7 @@ li a:hover {
 .main {
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
-  grid-template-rows: 200px 70px 1fr;
+  grid-template-rows: 200px 70px auto;
   grid-template-areas: 
   ". ggl-img ."
   ". src-bar ."
@@ -120,14 +120,30 @@ li a:hover {
 .flexbox {
   grid-area: flexbox;
   justify-self: center;
-
 }
 .google-src {
   grid-area: ggl-src;
-}
+ width: 150px;
+  height: 40px;
+  border: 1px solid #ececec;
+  margin-left: 20px;
+  transition-duration: 0.4s;
+ }
+ .google-src:hover{
+   background-color: #efebeb59;
+ }
 .lucky-btn {
   grid-area: lucky-btn;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #ececec;
+  margin-left: 20px;
+  transition-duration: 0.4s;
 }
+.lucky-btn:hover{
+   background-color: #efebeb59;
+ }
+
 
 /* footer */
 
