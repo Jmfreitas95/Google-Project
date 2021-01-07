@@ -1,0 +1,39 @@
+/* header */
+.header {
+    display: grid;
+    grid-template-columns: 180px 700px repeat(3, 1fr);
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+    "google search . anchor sign"
+    "google navbar . . .";
+}
+.google-img {
+    grid-area: google;
+    align-self: start;
+    margin-left: 20px; 
+    margin-top: 10px;
+}
+.search {
+    grid-area: search;
+    justify-self: center;
+    align-self: end;
+   
+}
+.anchor {
+    grid-area: anchor;
+}
+.sign-button {
+    grid-area: sign;
+}
+.navbar {
+    grid-area: navbar;
+    
+}
+#google {
+    width: 144px;
+}
+#search {
+    width: 650px;
+    height: 21px;
+}
+/* bottom part of header */
