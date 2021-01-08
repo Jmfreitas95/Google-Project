@@ -128,6 +128,7 @@ li a:hover {
   border: 1px solid #ececec;
   margin-left: 20px;
   transition-duration: 0.4s;
+  cursor: pointer;
  }
  .google-src:hover{
    background-color: #efebeb59;
@@ -139,6 +140,7 @@ li a:hover {
   border: 1px solid #ececec;
   margin-left: 20px;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 .lucky-btn:hover{
    background-color: #efebeb59;
@@ -191,4 +193,69 @@ li a:hover {
   grid-area: settings;
   justify-self: center;
   align-self: center;
+}
+
+@media only screen and (max-width: 360px){
+  .nav-bar {
+    display: grid;
+    grid-template-areas: 
+    "about images . . . nine-dots pic";
+  }
+  .pic {
+    margin-right: 15px;
+  }
+  .nine-dots {
+    margin-right: 50px;
+  }
+  .store {
+    display: none;
+  }
+  .gmail {
+    display: none;
+  }
+  .lucky-btn{
+    display: none;
+  }
+  .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 50px 200px;
+  grid-template-areas: 
+  "ggl-img "
+  "src-bar"
+  "flexbox";
+  }  
+  .google-img {
+    height: auto;
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  .search-bar{
+    width: 300px;
+  }
+  #search{
+  width: 100px;
+}
+.google-src{
+  margin-top: 10px;
+}
+  .footer-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px;
+  grid-template-areas: 
+  "privacy business hsw"
+  "advertising terms settings";
+  position: absolute;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e4e4e4;
+  }
+  .advertising {
+    justify-self: end;
+    margin-right: 20px;
+  }
+  .privacy {
+    justify-self: end;
+    margin-right: 30px;
+  }  
 }
